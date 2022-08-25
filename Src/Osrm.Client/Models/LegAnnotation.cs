@@ -12,5 +12,8 @@ namespace Osrm.Client.Models
         
         [JsonPropertyName("speed")]
         public decimal[] Speed { get; set; }
+
+        [JsonPropertyName("nodes")]
+        public long[] Nodes { get; set; }
     }
 }

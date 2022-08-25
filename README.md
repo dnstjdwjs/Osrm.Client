@@ -3,13 +3,11 @@ Osrm.Client
 A Http client for OSRM for 5x API
 
 Forked from https://github.com/JubilsoftTechnologies/Osrm.Client - version 3.5.0.1
+|- Re-Forked from https://github.com/dsteindd/Osrm.Client
 
 ## Changes from forked version:
-- resolved switched waypoint latitude/longitude bug
-- moved from using double to decimal for distance,duration,latitude,longitude
-- added annotations for RouteRequest (in order to get time/distance info along geometry)
-- added annotations for TableRequest (in order to get distance matrix as well)
-- use of polyline6 default format for geometry response decoding
+- added nodes property on LegAnnotation
+- added nodes option on RouteRequest
 
 ## Usage Summary (from forked repo): 
   (see also OSRM documentation - http://project-osrm.org/docs/v5.22.0/api)

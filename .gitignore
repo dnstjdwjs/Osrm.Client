@@ -155,3 +155,6 @@ $RECYCLE.BIN/
 .DS_Store
 */packages
 /Src/.vs/Osrm.Client
+/.vs/slnx.sqlite
+/.vs/ProjectSettings.json
+/.vs/VSWorkspaceState.json

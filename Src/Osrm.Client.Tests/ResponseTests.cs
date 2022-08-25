@@ -29,13 +29,14 @@ namespace Osrm.Client.Tests
             {
                 Coordinates = locations,
                 Alternative = false,
-                Overview = "full",
+                Overview = "full"
             };
 
             request
                 .AddDistanceAnnotation()
                 .AddDurationAnnotation()
-                .AddSpeedAnnotation();
+                .AddSpeedAnnotation()
+                .AddNodeAnnotations();
 
             var result2 = osrm.Route(request).GetAwaiter().GetResult();
 
@@ -48,6 +49,7 @@ namespace Osrm.Client.Tests
             Assert.IsNotNull(result2.Routes[0].Legs[0].LegAnnotation.Distance);
             Assert.IsNotNull(result2.Routes[0].Legs[0].LegAnnotation.Duration);
             Assert.IsNotNull(result2.Routes[0].Legs[0].LegAnnotation.Speed);
+            Assert.IsNotNull(result2.Routes[0].Legs[0].LegAnnotation.Nodes);
 
             var result3 = osrm.Route(new RouteRequest()
             {

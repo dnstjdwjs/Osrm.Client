@@ -93,6 +93,12 @@ namespace Osrm.Client.Models.Requests
             return this;
         }
 
+        public RouteRequest AddNodeAnnotations()
+        {
+            AddAnnotationIfNotPresent("nodes");
+            return this;
+        }
+
         private void AddAnnotationIfNotPresent(string annotation)
         {
             if (!Annotations.Contains(annotation))
