@@ -2,12 +2,13 @@ Osrm.Client
 ==========
 A Http client for OSRM for 5x API
 
-Forked from https://github.com/JubilsoftTechnologies/Osrm.Client - version 3.5.0.1
+From https://github.com/JubilsoftTechnologies/Osrm.Client - version 3.5.0.1
 |- Re-Forked from https://github.com/dsteindd/Osrm.Client
 
 ## Changes from forked version:
 - added nodes property on LegAnnotation
 - added nodes option on RouteRequest
+- added Intersection, updated on RouteStep
 
 ## Usage Summary (from forked repo): 
   (see also OSRM documentation - http://project-osrm.org/docs/v5.22.0/api)

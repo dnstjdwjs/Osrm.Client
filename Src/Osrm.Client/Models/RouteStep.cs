@@ -20,6 +20,9 @@ namespace Osrm.Client.Models
         [JsonPropertyName("geometry")]
         public string GeometryStr { get; set; }
 
+        /// <summary>
+        /// Convert From polyline6 string
+        /// </summary>
         public Location[] Geometry
         {
             get
@@ -42,6 +45,12 @@ namespace Osrm.Client.Models
 
         [JsonPropertyName("name")]
         public string Name { get; set; }
+
+        [JsonPropertyName("weight")]
+        public decimal Weight { get; set; }
+
+        [JsonPropertyName("intersections")]
+        public Intersection[] Intersections { get; set; }
 
     }
 }
