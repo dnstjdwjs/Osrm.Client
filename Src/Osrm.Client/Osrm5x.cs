@@ -222,7 +222,7 @@ namespace Osrm.Client
             try
             {
                 string responseBody = await Client.GetStringAsync(fullUrl);
-
+                System.Diagnostics.Debug.WriteLine(responseBody);
                 return await Task.FromResult(JsonSerializer.Deserialize<T>(responseBody));
             }
             catch (HttpRequestException e)

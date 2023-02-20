@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+	  <PackageId>Osrm.Client.Fork</PackageId>
+		<Description>
+			Forked from Osrm.Client on nuget.org
+			https://github.com/dnstjdwjs/Osrm.Client
+		</Description>
+		<Authors>(주) 씨엘 개발부 전성운</Authors>
+		<Company>(주) 씨엘</Company>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
