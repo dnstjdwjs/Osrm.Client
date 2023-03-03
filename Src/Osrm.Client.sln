@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Osrm.Client", "Osrm.Client\Osrm.Client.csproj", "{4D89E36A-C4C9-44E1-B0A3-7C78CD107477}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrm.Client.Demo", "Osrm.Client.Demo\Osrm.Client.Demo.csproj", "{0B671622-78FD-4E25-A86A-CB8C1203CCDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Osrm.Client.Demo", "Osrm.Client.Demo\Osrm.Client.Demo.csproj", "{0B671622-78FD-4E25-A86A-CB8C1203CCDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osrm.Client.Tests", "Osrm.Client.Tests\Osrm.Client.Tests.csproj", "{8E28C4E2-18FF-429E-BC8D-49553B5E995D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Osrm.Client.Tests", "Osrm.Client.Tests\Osrm.Client.Tests.csproj", "{8E28C4E2-18FF-429E-BC8D-49553B5E995D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5D37E1E8-16D8-4B3D-A8FD-17A235E871F8}"
 	ProjectSection(SolutionItems) = preProject
@@ -18,21 +18,35 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4D89E36A-C4C9-44E1-B0A3-7C78CD107477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4D89E36A-C4C9-44E1-B0A3-7C78CD107477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D89E36A-C4C9-44E1-B0A3-7C78CD107477}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4D89E36A-C4C9-44E1-B0A3-7C78CD107477}.Debug|x64.Build.0 = Debug|Any CPU
 		{4D89E36A-C4C9-44E1-B0A3-7C78CD107477}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D89E36A-C4C9-44E1-B0A3-7C78CD107477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D89E36A-C4C9-44E1-B0A3-7C78CD107477}.Release|x64.ActiveCfg = Release|x64
+		{4D89E36A-C4C9-44E1-B0A3-7C78CD107477}.Release|x64.Build.0 = Release|x64
 		{0B671622-78FD-4E25-A86A-CB8C1203CCDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0B671622-78FD-4E25-A86A-CB8C1203CCDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B671622-78FD-4E25-A86A-CB8C1203CCDB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0B671622-78FD-4E25-A86A-CB8C1203CCDB}.Debug|x64.Build.0 = Debug|Any CPU
 		{0B671622-78FD-4E25-A86A-CB8C1203CCDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B671622-78FD-4E25-A86A-CB8C1203CCDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B671622-78FD-4E25-A86A-CB8C1203CCDB}.Release|x64.ActiveCfg = Release|x64
+		{0B671622-78FD-4E25-A86A-CB8C1203CCDB}.Release|x64.Build.0 = Release|x64
 		{8E28C4E2-18FF-429E-BC8D-49553B5E995D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8E28C4E2-18FF-429E-BC8D-49553B5E995D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E28C4E2-18FF-429E-BC8D-49553B5E995D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8E28C4E2-18FF-429E-BC8D-49553B5E995D}.Debug|x64.Build.0 = Debug|Any CPU
 		{8E28C4E2-18FF-429E-BC8D-49553B5E995D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E28C4E2-18FF-429E-BC8D-49553B5E995D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E28C4E2-18FF-429E-BC8D-49553B5E995D}.Release|x64.ActiveCfg = Release|x64
+		{8E28C4E2-18FF-429E-BC8D-49553B5E995D}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
