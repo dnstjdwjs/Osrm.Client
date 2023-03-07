@@ -227,7 +227,10 @@ namespace Osrm.Client.Tests
             var req = new MatchRequest()
             {
                 Coordinates = locations,
-                Timestamps = new int[] { 1424684612, 1424684616, 1424684620 }
+                Timestamps = new int[] { 1424684612, 1424684616, 1424684620 },
+                Gaps = "ignore",
+                Tidy = true,
+                Annotations = new string[3] {"nodes", "distance", "speed"}
             };
 
             var result = osrm.Match(req).GetAwaiter().GetResult();
@@ -236,6 +239,9 @@ namespace Osrm.Client.Tests
             Assert.IsTrue(result.Matchings.Length > 0);
             Assert.IsTrue(result.Matchings[0].Legs.Length > 0);
             Assert.IsNotNull(result.Matchings[0].Confidence);
+            Assert.IsNotNull(result.Matchings[0].Legs[0].LegAnnotation.Nodes);
+            Assert.IsNotNull(result.Matchings[0].Legs[0].LegAnnotation.Distance);
+            Assert.IsNotNull(result.Matchings[0].Legs[0].LegAnnotation.Speed);
         }
 
         [TestMethod]
